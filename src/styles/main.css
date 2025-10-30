@@ -210,14 +210,146 @@ main{
   text-align: center;
   opacity: 55%;
 }
-/*добавить кнопки с инструментами сюда*/
 
-.figma_button{
-  width: 392px;
-  height: 294px;
+.first_line{
+  margin: 90px 108px 100px 108px;
+  display: flex;
+  gap: 25px; 
+  justify-content: center; 
 }
 
-/*добавить кнопки с инструментами сюда*/
+.second_line{
+  margin-bottom: 100px;
+  display: flex;
+  gap: 25px; 
+  justify-content: center; 
+}
+
+.figma_card, .scetch_card, .vsCode_card, .notion_card, .slack_card, .invision_card{
+  width: 392px;
+  height: 294px;
+  background-image: url('../img/nothover_card.png');
+  background-size: cover;
+  background-position: center;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.figma_text, .scetch_text, .vsCode_text, .notion_text, .slack_text, .invision_text{
+  width: 326px;
+  height: 60px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  opacity: 55%;
+  margin: 30px 33px 37px 33px;
+}
+
+.figma_like, .scetch_like, .vsCode_like, .notion_like, .slack_like, .invision_like {
+  width: 28px;
+  height: 28px;
+  margin: 0 24px 40px 40px;
+  background-image: url('../img/like.png');
+  transition: transform 0.2s ease;
+  appearance: none; 
+  cursor: pointer;
+}
+
+.figma_like:checked, .scetch_like:checked, .vsCode_like:checked, 
+.notion_like:checked, .slack_like:checked, .invision_like:checked {
+  background-image: url('../img/like_active.png');
+  transform: scale(1.1);
+}
+
+.figma_like:active, .scetch_like:active, .vsCode_like:active,
+.notion_like:active, .slack_like:active, .invision_like:active {
+  background-image: url('img/like_filled.png');
+  transform: scale(0.95);
+}
+
+.figma_add, .scetch_add, .vsCode_add, .notion_add, .slack_add, .invision_add {
+  width: 28px;
+  height: 28px;
+  margin: 0 130px 40px 0;
+  cursor: pointer;
+}
+
+.figma_visit, .scetch_visit, .vsCode_visit, .notion_visit, .slack_visit, .invision_visit {
+  width: 106px;
+  height: 42px;
+  border-radius: 8px;
+  margin: -7px 33px 33px 0;
+  position: absolute;
+  background: none;
+  opacity: 55%;
+  font-weight: 600px;
+  font-size: 16px;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.figma_card:hover, .scetch_card:hover, .vsCode_card:hover, 
+.notion_card:hover, .slack_card:hover, .invision_card:hover {
+  transform: translateY(-20px); 
+  background-image: url('../img/hover_card.png');
+}
+
+.figma_card:hover .figma_visit, .scetch_card:hover .scetch_visit,
+.vsCode_card:hover .vsCode_visit, .notion_card:hover .notion_visit,
+.slack_card:hover .slack_visit, .invision_card:hover .invision_visit {
+  background-color: #FF6E30;
+  opacity: 100%;
+}
+
+.figma_logo{
+  width: 170px;
+  height: 66px;
+  margin: 33px 189px 0 33px;
+}
+
+.scetch_logo{
+  width: 194px;
+  height: 66px;
+  margin: 33px 189px 0 33px;
+}
+
+.vsCode_logo{
+  width: 323px;
+  height: 66px;
+  margin: 33px 189px 0 33px;
+}
+
+.notion_logo{
+  width: 195px;
+  height: 66px;
+  margin: 33px 189px 0 33px;
+}
+
+.slack_logo{
+  width: 195px;
+  height: 66px;
+  margin: 33px 189px 0 33px;
+}
+
+.invision_logo{
+  width: 195px;
+  height: 66px;
+  margin: 33px 189px 0 33px;
+}
+
+.load_more{
+  width: 184px;
+  height: 64px;
+  border-radius: 8px;
+  background: none;
+  border-color:#FFFFFF1A;
+  border-width: 1px;
+  font-weight: 500;
+  font-size: 20px;
+  color: #FF6E30;
+  margin: 0 628px 200px 628px;
+}
+
 footer{
   width: 1224px;
   height: 253px;
@@ -225,13 +357,13 @@ footer{
 }
 
 .footer_border{
-  display: flex;
+  display: flex; 
   position: absolute;
 }
 
 .footer_text{
-  margin: 55px 429px 162px 428px;
   position: absolute;
+  margin: 55px 429px 162px 428px;
   width: 367px;
   height: 36px;
   font-weight: 500px;
