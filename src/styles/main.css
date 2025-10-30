@@ -189,3 +189,82 @@ main{
   display: flex;
   list-style: none;
 }
+
+.tools_info{
+  width: 455px;
+  height: 147px;
+  margin: 200px 489px 0 493px;
+}
+
+.tools_info1{
+  font-weight: 500px;
+  font-size: 48px;
+  line-height: 130%;
+}
+
+.tools_info2{
+  margin: 25px 14px 0 14px;
+  font-weight: 500px;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  opacity: 55%;
+}
+/*добавить кнопки с инструментами сюда*/
+
+.figma_button{
+  width: 392px;
+  height: 294px;
+}
+
+/*добавить кнопки с инструментами сюда*/
+footer{
+  width: 1224px;
+  height: 253px;
+  margin: 200px 108px 48px 108px;
+}
+
+.footer_border{
+  display: flex;
+  position: absolute;
+}
+
+.footer_text{
+  margin: 55px 429px 162px 428px;
+  position: absolute;
+  width: 367px;
+  height: 36px;
+  font-weight: 500px;
+  font-size: 24px;
+  line-height: 100%;
+  opacity: 80%;
+}
+
+.microsoft{
+  position: absolute;
+  width: 193px;
+  height: 42px;
+  margin:151px 949px 60px 82px;
+
+}
+
+.google{
+  position: absolute;
+  width: 157px;
+  height: 51px;
+  margin: 146px 685px 56px 382px;
+}
+
+.slack{
+  position: absolute;
+  width: 194px;
+  height: 49px;
+  margin: 147px 384px 57px 646px;
+}
+
+.wordpress{
+  position: absolute;
+  width: 194px;
+  height: 44px;
+  margin: 150px 83px 59px 947px;
+}
